@@ -129,6 +129,14 @@ Block6  block6= ^(NSString *result6){
     }];
     
     block6(@"879");
+    
+    //将Block定义在方法内部(只有添加了__block，block内部才可以改变值)
+    __block int x = 100;
+    void (^sumXAndYBlock)(int) = ^(int y){
+        x = x+y;
+        printf("new x value is %d",x);
+    };
+    sumXAndYBlock(50);
 
 }
 - (IBAction)pre:(id)sender {
@@ -142,10 +150,22 @@ Block6  block6= ^(NSString *result6){
     _label.text = str;
 }
 - (IBAction)blockButton:(id)sender {
-    BlockViewController *vc = [[BlockViewController alloc]initWithNibName:@"BlockViewController" bundle:nil];
-    vc.ButtonBlock = ^(NSString *str){
+    BlockViewController *vc = [[BlockViewController alloc]init];
+    vc.BlockPass = ^(NSString *str){
         _label.text = str;
     };
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)zz:(id)sender {
+    BlockViewController *vc = [[BlockViewController alloc]init];
+    [vc valueBlock:^(UIColor *color) {
+        _label.backgroundColor = color;
+    }];
+    [vc valueStringBlock:^(NSString *string) {
+        _label.text = string;
+    }];
+    
     [self presentViewController:vc animated:YES completion:nil];
 }
 

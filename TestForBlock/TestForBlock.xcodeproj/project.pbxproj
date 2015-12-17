@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9430003E1C22F03000E32FB9 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430003D1C22F03000E32FB9 /* NetRequest.m */; };
 		949FDA251C2199E10047B0C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA241C2199E10047B0C6 /* main.m */; };
 		949FDA281C2199E10047B0C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA271C2199E10047B0C6 /* AppDelegate.m */; };
 		949FDA2B1C2199E10047B0C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA2A1C2199E10047B0C6 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9430003C1C22F03000E32FB9 /* NetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		9430003D1C22F03000E32FB9 /* NetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		949FDA201C2199E10047B0C6 /* TestForBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949FDA241C2199E10047B0C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		949FDA261C2199E10047B0C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				949FDA5E1C22212C0047B0C6 /* BlockViewController.h */,
 				949FDA5F1C22212C0047B0C6 /* BlockViewController.m */,
 				949FDA601C22212C0047B0C6 /* BlockViewController.xib */,
+				9430003C1C22F03000E32FB9 /* NetRequest.h */,
+				9430003D1C22F03000E32FB9 /* NetRequest.m */,
 				949FDA2C1C2199E10047B0C6 /* Main.storyboard */,
 				949FDA2F1C2199E10047B0C6 /* Assets.xcassets */,
 				949FDA311C2199E10047B0C6 /* LaunchScreen.storyboard */,
@@ -289,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				949FDA2B1C2199E10047B0C6 /* ViewController.m in Sources */,
+				9430003E1C22F03000E32FB9 /* NetRequest.m in Sources */,
 				949FDA5C1C221FDF0047B0C6 /* OtherViewController.m in Sources */,
 				949FDA281C2199E10047B0C6 /* AppDelegate.m in Sources */,
 				949FDA611C22212C0047B0C6 /* BlockViewController.m in Sources */,
@@ -516,6 +522,7 @@
 				949FDA4F1C2199E10047B0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		949FDA501C2199E10047B0C6 /* Build configuration list for PBXNativeTarget "TestForBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				949FDA521C2199E10047B0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		949FDA531C2199E10047B0C6 /* Build configuration list for PBXNativeTarget "TestForBlockUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				949FDA551C2199E10047B0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

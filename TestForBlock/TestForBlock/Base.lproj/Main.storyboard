@@ -49,6 +49,13 @@
                                     <action selector="blockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N28-LF-JhK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-CS-oVp">
+                                <rect key="frame" x="111" y="495" width="59" height="30"/>
+                                <state key="normal" title="Button11"/>
+                                <connections>
+                                    <action selector="zz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48l-Ao-3kR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

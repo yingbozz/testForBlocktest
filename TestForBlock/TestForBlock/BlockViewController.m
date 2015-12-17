@@ -8,6 +8,8 @@
 
 #import "BlockViewController.h"
 
+
+
 @interface BlockViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
@@ -15,18 +17,34 @@
 
 @implementation BlockViewController
 - (IBAction)button:(id)sender {
-    if (_ButtonBlock) {
-        
-        _ButtonBlock(_textField.text);
-        
+    if (_BlockPass) {
+        _BlockPass(_textField.text);
     }
     [self dismissViewControllerAnimated:YES completion:nil];
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(0, 70, 320, 40);
+    [self.view addSubview:button];
+    [button setTitle:@"return 1 page" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)buttonAction:(UIButton *)button
+{
+    //	2.在合适的地方执行block代码
+    self.block([UIColor redColor]);
+    self.string(@"asdasdasd");
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (void)valueBlock:(BL)block
+{
+    self.block = block;
+}
+- (void)valueStringBlock:(stringBL)block
+{
+    self.string = block;
 }
 
 - (void)didReceiveMemoryWarning {
