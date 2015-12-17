@@ -15,6 +15,10 @@
 		949FDA331C2199E10047B0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949FDA311C2199E10047B0C6 /* LaunchScreen.storyboard */; };
 		949FDA3E1C2199E10047B0C6 /* TestForBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA3D1C2199E10047B0C6 /* TestForBlockTests.m */; };
 		949FDA491C2199E10047B0C6 /* TestForBlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA481C2199E10047B0C6 /* TestForBlockUITests.m */; };
+		949FDA5C1C221FDF0047B0C6 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA5A1C221FDF0047B0C6 /* OtherViewController.m */; };
+		949FDA5D1C221FDF0047B0C6 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FDA5B1C221FDF0047B0C6 /* OtherViewController.xib */; };
+		949FDA611C22212C0047B0C6 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949FDA5F1C22212C0047B0C6 /* BlockViewController.m */; };
+		949FDA621C22212C0047B0C6 /* BlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949FDA601C22212C0047B0C6 /* BlockViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		949FDA441C2199E10047B0C6 /* TestForBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		949FDA481C2199E10047B0C6 /* TestForBlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestForBlockUITests.m; sourceTree = "<group>"; };
 		949FDA4A1C2199E10047B0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949FDA591C221FDF0047B0C6 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		949FDA5A1C221FDF0047B0C6 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		949FDA5B1C221FDF0047B0C6 /* OtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		949FDA5E1C22212C0047B0C6 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		949FDA5F1C22212C0047B0C6 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		949FDA601C22212C0047B0C6 /* BlockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlockViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,12 @@
 				949FDA271C2199E10047B0C6 /* AppDelegate.m */,
 				949FDA291C2199E10047B0C6 /* ViewController.h */,
 				949FDA2A1C2199E10047B0C6 /* ViewController.m */,
+				949FDA591C221FDF0047B0C6 /* OtherViewController.h */,
+				949FDA5A1C221FDF0047B0C6 /* OtherViewController.m */,
+				949FDA5B1C221FDF0047B0C6 /* OtherViewController.xib */,
+				949FDA5E1C22212C0047B0C6 /* BlockViewController.h */,
+				949FDA5F1C22212C0047B0C6 /* BlockViewController.m */,
+				949FDA601C22212C0047B0C6 /* BlockViewController.xib */,
 				949FDA2C1C2199E10047B0C6 /* Main.storyboard */,
 				949FDA2F1C2199E10047B0C6 /* Assets.xcassets */,
 				949FDA311C2199E10047B0C6 /* LaunchScreen.storyboard */,
@@ -244,8 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				949FDA331C2199E10047B0C6 /* LaunchScreen.storyboard in Resources */,
+				949FDA5D1C221FDF0047B0C6 /* OtherViewController.xib in Resources */,
 				949FDA301C2199E10047B0C6 /* Assets.xcassets in Resources */,
 				949FDA2E1C2199E10047B0C6 /* Main.storyboard in Resources */,
+				949FDA621C22212C0047B0C6 /* BlockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				949FDA2B1C2199E10047B0C6 /* ViewController.m in Sources */,
+				949FDA5C1C221FDF0047B0C6 /* OtherViewController.m in Sources */,
 				949FDA281C2199E10047B0C6 /* AppDelegate.m in Sources */,
+				949FDA611C22212C0047B0C6 /* BlockViewController.m in Sources */,
 				949FDA251C2199E10047B0C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
